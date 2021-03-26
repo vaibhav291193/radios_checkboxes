@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create a Shipment - Additional Information</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="custom.css" rel="stylesheet">
+<link href="inputField.css" rel="stylesheet">
+<link href=checkboxes.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+
+<body>
+<div class="row" style="margin-left:24px;">
+<div class="col-md-3"></div>
+<div class="col-md-9 row" >
+<h1 id=formHeading">Create a Shipment</h1>
+<form name="form1" aria-labelledby="formHeading" onSubmit="return validateFormTwo();" action="thankyou.html">
+
+<div role="group" aria-labelledby="checkbox-names-add-info" style="padding-top:24px;">
+                <h2 id="checkbox-names-add-info">Additional Information</h2>
+                <div class="checkbox-container">
+                    <input id="sign" class="by-keyboard" type="checkbox">
+                    <label for="sign">Signature</div>
+                <div class="checkbox-container">
+                    <input id="age" class="by-keyboard" type="checkbox">
+                    <label for="age">Proof of age: 18</label>
+                </div>
+                <div class="checkbox-container">
+                    <input id="pickup" class="by-keyboard" type="checkbox">
+                    <label for="pickup">Card for pickup</label>
+                </div>
+            <div aria-disabled="true" class="checkbox-container disabled">
+                    <input disabled id="noSafeDrop" class="by-keyboard" type="checkbox" checked>
+                    <label for="noSafeDrop">Do not safe drop</label>
+                </div>    
+<div aria-disabled="true" class="checkbox-container disabled">
+                    <input disabled id="leave" class="by-keyboard" type="checkbox">
+                    <label for="leave">Leave at door, no card</label>
+                </div>            
+<div class="checkbox-container">
+                    <input id="liability" class="by-keyboard" type="checkbox">
+                    <label for="liability">Liability coverage</label>
+                </div>
+</div>
+     
+<div role="group" aria-labelledby="errMsg" style="padding-top:24px;">
+<div class="checkbox-container">
+                    <input id="confirm" class="by-keyboard" type="checkbox">
+                    <label for="confirm">I confirm the details submitted are correct to the best of my knowledge</div>
+<div id="errMsg" class="ds-error"></div>                
+</div>
+
+
+<p style="padding-bottom:30px; padding-top:24px;"><button type="submit" class="btn btn-primary">Submit</button>
+</p>
+</form>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script src="formValidationAddInfo.js"></script>
+<script src="checkboxScript.js"></script>
+</body>
+
+</html>

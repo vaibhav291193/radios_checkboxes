@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create a Shipment</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="custom.css" rel="stylesheet">
+<link href="inputField.css" rel="stylesheet">
+<link href="radioButtons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+
+<body>
+<div class="row" style="margin-left:24px;">
+<div class="col-md-3"></div>
+<div class="col-md-9 row" >
+<h1 id=formHeading">Create a Shipment</h1>
+<form name="form1" aria-labelledby="formHeading" action="additionalInfo.html" onSubmit="return validateFormOne();">
+
+<div role="radiogroup" aria-labelledby="radio-names-shape shapeError" style="padding-top:24px;">
+                <h2 id="radio-names-shape">Select your package shape</h2>
+                <div class="checkbox-container">
+                    <input class="by-keyboard" id="cylindrical" name="shape" type="radio">
+                    <label for="cylindrical">Cylindrical</label>
+                </div>
+
+                <div class="checkbox-container">
+                    <input class="by-keyboard" id="spherical" name="shape" type="radio">
+                    <label for="spherical">Spherical</label>
+                </div>
+
+<div class="checkbox-container">
+                    <input class="by-keyboard" id="cubical" name="shape" type="radio">
+                    <label for="cubical">Cubical</label>
+                </div>
+<div id="shapeError" class="ds-error"></div>
+</div>
+
+
+<div role="radiogroup" aria-labelledby="radio-names-weight" style="padding-top:24px;">
+                <h2 id="radio-names-weight">What is your package's weight?</h2>
+<div aria-disabled="true" class="checkbox-container disabled">
+                    <input class="by-keyboard" disabled id="less" name="weight" type="radio" checked>
+                    <label for="less">Upto 5 pounds</label>
+                </div>
+
+<div aria-disabled="true" class="checkbox-container disabled">
+                    <input class="by-keyboard" disabled id="more" name="weight" type="radio">
+                    <label for="more">More than 5 pounds</label>
+                </div>
+</div>
+
+
+<div role="radiogroup" aria-labelledby="radio-names-shipment shipError" style="padding-top:24px;">
+                <h2 id="radio-names-shipment">Choose a shipping service</h2>
+                <div class="checkbox-container">
+                    <input class="by-keyboard" id="regular" name="ship" type="radio">
+                    <label for="regular">Regular Parcel</label>
+                </div>
+
+                <div class="checkbox-container">
+                    <input class="by-keyboard" id="expedited" name="ship" type="radio">
+                    <label for="expedited">Expedited Parcel</label>
+                </div>
+
+<div class="checkbox-container">
+                    <input class="by-keyboard" id="express" name="ship" type="radio">
+                    <label for="express">Xpress Post</label>
+                </div>
+
+<div aria-disabled="true" class="checkbox-container disabled">
+                    <input class="by-keyboard" disabled id="priority" name="ship" type="radio">
+                    <label for="priority">Priority</label>
+                </div>
+<div id="shipError" class="ds-error"></div>
+</div>
+
+
+
+<p style="padding-bottom:30px; padding-top:24px;"><button type="submit" class="btn btn-primary">Submit</button>
+</p>
+</form>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script src="radioButtonScript.js"></script>
+<script src="formValidation.js"></script>
+</body>
+
+</html>
